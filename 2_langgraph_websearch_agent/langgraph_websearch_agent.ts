@@ -29,7 +29,7 @@ Only look up information when you are sure of what you want.
 If you need to look up some information before asking a follow up question, you are allowed to do that!`;
 
 // Now the model we will use
-const model = new ChatOpenAI({model: 'gpt-3.5-turbo'}).bindTools(tools);
+const model = new ChatOpenAI({model: 'gpt-4o-mini'}).bindTools(tools);
 
 // Here is where we construct the graph
 const graph = new StateGraph(AgentState)
