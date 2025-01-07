@@ -1,0 +1,970 @@
+        {
+          "id": "call_1jVzePltFMgdpbHzl9xDgf6o",
+          "type": "function",
+          "function": "[Object]"
+        }
+      ]
+    },
+    "response_metadata": {
+      "tokenUsage": {
+        "promptTokens": 144,
+        "completionTokens": 22,
+        "totalTokens": 166
+      },
+      "finish_reason": "tool_calls",
+      "model_name": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 144,
+        "completion_tokens": 22,
+        "total_tokens": 166,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "system_fingerprint": "fp_0aa8d3e20b"
+    },
+    "tool_calls": [
+      {
+        "name": "tavily_search_results_json",
+        "args": {
+          "input": "current weather Los Angeles"
+        },
+        "type": "tool_call",
+        "id": "call_1jVzePltFMgdpbHzl9xDgf6o"
+      }
+    ],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "output_tokens": 22,
+      "input_tokens": 144,
+      "total_tokens": 166,
+      "input_token_details": {
+        "audio": 0,
+        "cache_read": 0
+      },
+      "output_token_details": {
+        "audio": 0,
+        "reasoning": 0
+      }
+    }
+  }
+]
+
+Streaming:
+undefined
+Calling: {"name":"tavily_search_results_json","args":{"input":"current weather in Louisiana"},"type":"tool_call","id":"call_1jVzePltFMgdpbHzl9xDgf6o"}
+[
+  ToolMessage {
+    "id": "baea429e-bc35-4833-9b14-3aed42154302",
+    "content": "[{\"title\":\"Weather in Louisiana\",\"url\":\"https://www.weatherapi.com/\",\"content\":\"{'location': {'name': 'Louisiana', 'region': 'Missouri', 'country': 'USA United States of America', 'lat': 39.4411, 'lon': -91.0551, 'tz_id': 'America/Chicago', 'localtime_epoch': 1736276329, 'localtime': '2025-01-07 12:58'}, 'current': {'last_updated_epoch': 1736275500, 'last_updated': '2025-01-07 12:45', 'temp_c': -6.7, 'temp_f': 19.9, 'is_day': 1, 'condition': {'text': 'Sunny', 'icon': '//cdn.weatherapi.com/weather/64x64/day/113.png', 'code': 1000}, 'wind_mph': 8.3, 'wind_kph': 13.3, 'wind_degree': 297, 'wind_dir': 'WNW', 'pressure_mb': 1032.0, 'pressure_in': 30.48, 'precip_mm': 0.0, 'precip_in': 0.0, 'humidity': 62, 'cloud': 0, 'feelslike_c': -12.3, 'feelslike_f': 9.9, 'windchill_c': -14.7, 'windchill_f': 5.5, 'heatindex_c': -8.8, 'heatindex_f': 16.1, 'dewpoint_c': -11.1, 'dewpoint_f': 12.0, 'vis_km': 16.0, 'vis_miles': 9.0, 'uv': 2.0, 'gust_mph': 11.2, 'gust_kph': 18.0}}\",\"score\":0.6114201,\"raw_content\":null},{\"title\":\"2025 Weather History in New Orleans Louisiana, United States\",\"url\":\"https://weatherspark.com/h/y/11799/2025/Historical-Weather-during-2025-in-New-Orleans-Louisiana-United-States\",\"content\":\"The data for this report comes from the Louis Armstrong New Orleans International Airport. This report shows the past weather for New Orleans, providing a weather history for 2025. It features all historical weather data series we have available, including the New Orleans temperature history for 2025. Hourly Temperature in 2025 in New Orleans Cloud Cover in 2025 in New Orleans Hours of Daylight and Twilight in 2025 in New Orleans Humidity Comfort Levels in 2025 in New Orleans Wind Speed in 2025 in New Orleans Hourly Wind Speed in 2025 in New Orleans Hourly Wind Direction in 2025 in New Orleans The details of the data sources used for this report can be found on the Louis Armstrong New Orleans International Airport page.\",\"score\":0.48235655,\"raw_content\":null}]",
+    "name": "tavily_search_results_json",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "tool_call_id": "call_1jVzePltFMgdpbHzl9xDgf6o"
+  }
+]
+[
+  AIMessage {
+    "id": "chatcmpl-An9jLT2jfkiuGsQIvxCTsVdQcQWxm",
+    "content": "",
+    "additional_kwargs": {
+      "tool_calls": [
+        {
+          "id": "call_CjWHDHVEnnmmJ5GDdcT8O1rx",
+          "type": "function",
+          "function": "[Object]"
+        }
+      ]
+    },
+    "response_metadata": {
+      "tokenUsage": {
+        "promptTokens": 817,
+        "completionTokens": 22,
+        "totalTokens": 839
+      },
+      "finish_reason": "tool_calls",
+      "model_name": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 817,
+        "completion_tokens": 22,
+        "total_tokens": 839,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "system_fingerprint": "fp_0aa8d3e20b"
+    },
+    "tool_calls": [
+      {
+        "name": "tavily_search_results_json",
+        "args": {
+          "input": "current weather in Los Angeles"
+        },
+        "type": "tool_call",
+        "id": "call_CjWHDHVEnnmmJ5GDdcT8O1rx"
+      }
+    ],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "output_tokens": 22,
+      "input_tokens": 817,
+      "total_tokens": 839,
+      "input_token_details": {
+        "audio": 0,
+        "cache_read": 0
+      },
+      "output_token_details": {
+        "audio": 0,
+        "reasoning": 0
+      }
+    }
+  }
+]
+undefined
+{
+  values: {
+    messages: [
+      HumanMessage {
+        "id": "34d164a1-dc16-4f53-bdbc-1f4ec648d0b4",
+        "content": "What is the weather in LA?",
+        "additional_kwargs": {},
+        "response_metadata": {}
+      },
+      AIMessage {
+        "id": "chatcmpl-An9jHkROxxIsNEE0kKBC4cUycQlKE",
+        "content": "",
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_1jVzePltFMgdpbHzl9xDgf6o",
+              "type": "function",
+              "function": "[Object]"
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "promptTokens": 144,
+            "completionTokens": 22,
+            "totalTokens": 166
+          },
+          "finish_reason": "tool_calls",
+          "model_name": "gpt-4o-mini-2024-07-18",
+          "usage": {
+            "prompt_tokens": 144,
+            "completion_tokens": 22,
+            "total_tokens": 166,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_0aa8d3e20b"
+        },
+        "tool_calls": [
+          {
+            "name": "tavily_search_results_json",
+            "args": {
+              "input": "current weather in Louisiana"
+            },
+            "type": "tool_call",
+            "id": "call_1jVzePltFMgdpbHzl9xDgf6o"
+          }
+        ],
+        "invalid_tool_calls": []
+      },
+      ToolMessage {
+        "id": "baea429e-bc35-4833-9b14-3aed42154302",
+        "content": "[{\"title\":\"Weather in Louisiana\",\"url\":\"https://www.weatherapi.com/\",\"content\":\"{'location': {'name': 'Louisiana', 'region': 'Missouri', 'country': 'USA United States of America', 'lat': 39.4411, 'lon': -91.0551, 'tz_id': 'America/Chicago', 'localtime_epoch': 1736276329, 'localtime': '2025-01-07 12:58'}, 'current': {'last_updated_epoch': 1736275500, 'last_updated': '2025-01-07 12:45', 'temp_c': -6.7, 'temp_f': 19.9, 'is_day': 1, 'condition': {'text': 'Sunny', 'icon': '//cdn.weatherapi.com/weather/64x64/day/113.png', 'code': 1000}, 'wind_mph': 8.3, 'wind_kph': 13.3, 'wind_degree': 297, 'wind_dir': 'WNW', 'pressure_mb': 1032.0, 'pressure_in': 30.48, 'precip_mm': 0.0, 'precip_in': 0.0, 'humidity': 62, 'cloud': 0, 'feelslike_c': -12.3, 'feelslike_f': 9.9, 'windchill_c': -14.7, 'windchill_f': 5.5, 'heatindex_c': -8.8, 'heatindex_f': 16.1, 'dewpoint_c': -11.1, 'dewpoint_f': 12.0, 'vis_km': 16.0, 'vis_miles': 9.0, 'uv': 2.0, 'gust_mph': 11.2, 'gust_kph': 18.0}}\",\"score\":0.6114201,\"raw_content\":null},{\"title\":\"2025 Weather History in New Orleans Louisiana, United States\",\"url\":\"https://weatherspark.com/h/y/11799/2025/Historical-Weather-during-2025-in-New-Orleans-Louisiana-United-States\",\"content\":\"The data for this report comes from the Louis Armstrong New Orleans International Airport. This report shows the past weather for New Orleans, providing a weather history for 2025. It features all historical weather data series we have available, including the New Orleans temperature history for 2025. Hourly Temperature in 2025 in New Orleans Cloud Cover in 2025 in New Orleans Hours of Daylight and Twilight in 2025 in New Orleans Humidity Comfort Levels in 2025 in New Orleans Wind Speed in 2025 in New Orleans Hourly Wind Speed in 2025 in New Orleans Hourly Wind Direction in 2025 in New Orleans The details of the data sources used for this report can be found on the Louis Armstrong New Orleans International Airport page.\",\"score\":0.48235655,\"raw_content\":null}]",
+        "name": "tavily_search_results_json",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "tool_call_id": "call_1jVzePltFMgdpbHzl9xDgf6o"
+      },
+      AIMessage {
+        "id": "chatcmpl-An9jLT2jfkiuGsQIvxCTsVdQcQWxm",
+        "content": "",
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_CjWHDHVEnnmmJ5GDdcT8O1rx",
+              "type": "function",
+              "function": "[Object]"
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "promptTokens": 817,
+            "completionTokens": 22,
+            "totalTokens": 839
+          },
+          "finish_reason": "tool_calls",
+          "model_name": "gpt-4o-mini-2024-07-18",
+          "usage": {
+            "prompt_tokens": 817,
+            "completion_tokens": 22,
+            "total_tokens": 839,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_0aa8d3e20b"
+        },
+        "tool_calls": [
+          {
+            "name": "tavily_search_results_json",
+            "args": {
+              "input": "current weather in Los Angeles"
+            },
+            "type": "tool_call",
+            "id": "call_CjWHDHVEnnmmJ5GDdcT8O1rx"
+          }
+        ],
+        "invalid_tool_calls": []
+      }
+    ]
+  },
+  next: [ 'action' ],
+  tasks: [
+    {
+      id: '8073d36e-da68-50a3-8190-1f3c88ada946',
+      name: 'action',
+      path: [Array],
+      interrupts: [],
+      state: undefined
+    }
+  ],
+  metadata: { source: 'loop', writes: { llm: [Object] }, step: 4, parents: {} },
+  config: {
+    configurable: {
+      thread_id: '3',
+      checkpoint_ns: '',
+      checkpoint_id: '1efcd2f4-6960-6ad0-8004-eb803f06a10c'
+    }
+  },
+  createdAt: '2025-01-07T19:40:40.317Z',
+  parentConfig: {
+    configurable: {
+      thread_id: '3',
+      checkpoint_ns: '',
+      checkpoint_id: '1efcd2f4-608e-6600-8003-06ed398f4ab8'
+    }
+  }
+}
+--
+{
+  values: {
+    messages: [
+      HumanMessage {
+        "id": "34d164a1-dc16-4f53-bdbc-1f4ec648d0b4",
+        "content": "What is the weather in LA?",
+        "additional_kwargs": {},
+        "response_metadata": {}
+      },
+      AIMessage {
+        "id": "chatcmpl-An9jHkROxxIsNEE0kKBC4cUycQlKE",
+        "content": "",
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_1jVzePltFMgdpbHzl9xDgf6o",
+              "type": "function",
+              "function": "[Object]"
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "promptTokens": 144,
+            "completionTokens": 22,
+            "totalTokens": 166
+          },
+          "finish_reason": "tool_calls",
+          "model_name": "gpt-4o-mini-2024-07-18",
+          "usage": {
+            "prompt_tokens": 144,
+            "completion_tokens": 22,
+            "total_tokens": 166,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_0aa8d3e20b"
+        },
+        "tool_calls": [
+          {
+            "name": "tavily_search_results_json",
+            "args": {
+              "input": "current weather in Louisiana"
+            },
+            "type": "tool_call",
+            "id": "call_1jVzePltFMgdpbHzl9xDgf6o"
+          }
+        ],
+        "invalid_tool_calls": []
+      },
+      ToolMessage {
+        "id": "baea429e-bc35-4833-9b14-3aed42154302",
+        "content": "[{\"title\":\"Weather in Louisiana\",\"url\":\"https://www.weatherapi.com/\",\"content\":\"{'location': {'name': 'Louisiana', 'region': 'Missouri', 'country': 'USA United States of America', 'lat': 39.4411, 'lon': -91.0551, 'tz_id': 'America/Chicago', 'localtime_epoch': 1736276329, 'localtime': '2025-01-07 12:58'}, 'current': {'last_updated_epoch': 1736275500, 'last_updated': '2025-01-07 12:45', 'temp_c': -6.7, 'temp_f': 19.9, 'is_day': 1, 'condition': {'text': 'Sunny', 'icon': '//cdn.weatherapi.com/weather/64x64/day/113.png', 'code': 1000}, 'wind_mph': 8.3, 'wind_kph': 13.3, 'wind_degree': 297, 'wind_dir': 'WNW', 'pressure_mb': 1032.0, 'pressure_in': 30.48, 'precip_mm': 0.0, 'precip_in': 0.0, 'humidity': 62, 'cloud': 0, 'feelslike_c': -12.3, 'feelslike_f': 9.9, 'windchill_c': -14.7, 'windchill_f': 5.5, 'heatindex_c': -8.8, 'heatindex_f': 16.1, 'dewpoint_c': -11.1, 'dewpoint_f': 12.0, 'vis_km': 16.0, 'vis_miles': 9.0, 'uv': 2.0, 'gust_mph': 11.2, 'gust_kph': 18.0}}\",\"score\":0.6114201,\"raw_content\":null},{\"title\":\"2025 Weather History in New Orleans Louisiana, United States\",\"url\":\"https://weatherspark.com/h/y/11799/2025/Historical-Weather-during-2025-in-New-Orleans-Louisiana-United-States\",\"content\":\"The data for this report comes from the Louis Armstrong New Orleans International Airport. This report shows the past weather for New Orleans, providing a weather history for 2025. It features all historical weather data series we have available, including the New Orleans temperature history for 2025. Hourly Temperature in 2025 in New Orleans Cloud Cover in 2025 in New Orleans Hours of Daylight and Twilight in 2025 in New Orleans Humidity Comfort Levels in 2025 in New Orleans Wind Speed in 2025 in New Orleans Hourly Wind Speed in 2025 in New Orleans Hourly Wind Direction in 2025 in New Orleans The details of the data sources used for this report can be found on the Louis Armstrong New Orleans International Airport page.\",\"score\":0.48235655,\"raw_content\":null}]",
+        "name": "tavily_search_results_json",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "tool_call_id": "call_1jVzePltFMgdpbHzl9xDgf6o"
+      }
+    ]
+  },
+  next: [ 'llm' ],
+  tasks: [
+    {
+      id: 'f04b98a5-d47d-5cdb-b4f1-921a830eaff0',
+      name: 'llm',
+      path: [Array],
+      interrupts: [],
+      state: undefined
+    }
+  ],
+  metadata: {
+    source: 'loop',
+    writes: { action: [Object] },
+    step: 3,
+    parents: {}
+  },
+  config: {
+    configurable: {
+      thread_id: '3',
+      checkpoint_ns: '',
+      checkpoint_id: '1efcd2f4-608e-6600-8003-06ed398f4ab8'
+    }
+  },
+  createdAt: '2025-01-07T19:40:39.392Z',
+  parentConfig: {
+    configurable: {
+      thread_id: '3',
+      checkpoint_ns: '',
+      checkpoint_id: '1efcd2f4-4364-68e0-8002-cd9c973bdffc'
+    }
+  }
+}
+--
+{
+  values: {
+    messages: [
+      HumanMessage {
+        "id": "34d164a1-dc16-4f53-bdbc-1f4ec648d0b4",
+        "content": "What is the weather in LA?",
+        "additional_kwargs": {},
+        "response_metadata": {}
+      },
+      AIMessage {
+        "id": "chatcmpl-An9jHkROxxIsNEE0kKBC4cUycQlKE",
+        "content": "",
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_1jVzePltFMgdpbHzl9xDgf6o",
+              "type": "function",
+              "function": "[Object]"
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "promptTokens": 144,
+            "completionTokens": 22,
+            "totalTokens": 166
+          },
+          "finish_reason": "tool_calls",
+          "model_name": "gpt-4o-mini-2024-07-18",
+          "usage": {
+            "prompt_tokens": 144,
+            "completion_tokens": 22,
+            "total_tokens": 166,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_0aa8d3e20b"
+        },
+        "tool_calls": [
+          {
+            "name": "tavily_search_results_json",
+            "args": {
+              "input": "current weather in Louisiana"
+            },
+            "type": "tool_call",
+            "id": "call_1jVzePltFMgdpbHzl9xDgf6o"
+          }
+        ],
+        "invalid_tool_calls": []
+      }
+    ]
+  },
+  next: [ 'action' ],
+  tasks: [
+    {
+      id: '4d50f991-d28a-5235-b68a-b5d68af5851c',
+      name: 'action',
+      path: [Array],
+      interrupts: [],
+      state: undefined
+    }
+  ],
+  metadata: { source: 'update', step: 2, writes: { llm: [Object] }, parents: {} },
+  config: {
+    configurable: {
+      thread_id: '3',
+      checkpoint_ns: '',
+      checkpoint_id: '1efcd2f4-4364-68e0-8002-cd9c973bdffc'
+    }
+  },
+  createdAt: '2025-01-07T19:40:36.334Z',
+  parentConfig: {
+    configurable: {
+      thread_id: '3',
+      checkpoint_ns: '',
+      checkpoint_id: '1efcd2f4-4331-6490-8001-b14d50ac0121'
+    }
+  }
+}
+--
+{
+  values: {
+    messages: [
+      HumanMessage {
+        "id": "34d164a1-dc16-4f53-bdbc-1f4ec648d0b4",
+        "content": "What is the weather in LA?",
+        "additional_kwargs": {},
+        "response_metadata": {}
+      },
+      AIMessage {
+        "id": "chatcmpl-An9jHkROxxIsNEE0kKBC4cUycQlKE",
+        "content": "",
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_1jVzePltFMgdpbHzl9xDgf6o",
+              "type": "function",
+              "function": "[Object]"
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "promptTokens": 144,
+            "completionTokens": 22,
+            "totalTokens": 166
+          },
+          "finish_reason": "tool_calls",
+          "model_name": "gpt-4o-mini-2024-07-18",
+          "usage": {
+            "prompt_tokens": 144,
+            "completion_tokens": 22,
+            "total_tokens": 166,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_0aa8d3e20b"
+        },
+        "tool_calls": [
+          {
+            "name": "tavily_search_results_json",
+            "args": {
+              "input": "current weather Los Angeles"
+            },
+            "type": "tool_call",
+            "id": "call_1jVzePltFMgdpbHzl9xDgf6o"
+          }
+        ],
+        "invalid_tool_calls": []
+      }
+    ]
+  },
+  next: [ 'action' ],
+  tasks: [
+    {
+      id: 'de94cdc2-9194-5774-a013-fdbe8499df6e',
+      name: 'action',
+      path: [Array],
+      interrupts: [],
+      state: undefined
+    }
+  ],
+  metadata: { source: 'loop', writes: { llm: [Object] }, step: 1, parents: {} },
+  config: {
+    configurable: {
+      thread_id: '3',
+      checkpoint_ns: '',
+      checkpoint_id: '1efcd2f4-4331-6490-8001-b14d50ac0121'
+    }
+  },
+  createdAt: '2025-01-07T19:40:36.313Z',
+  parentConfig: {
+    configurable: {
+      thread_id: '3',
+      checkpoint_ns: '',
+      checkpoint_id: '1efcd2f4-38bb-6100-8000-f6f01ed9904a'
+    }
+  }
+}
+--
+{
+  values: {
+    messages: [
+      HumanMessage {
+        "id": "34d164a1-dc16-4f53-bdbc-1f4ec648d0b4",
+        "content": "What is the weather in LA?",
+        "additional_kwargs": {},
+        "response_metadata": {}
+      }
+    ]
+  },
+  next: [ 'llm' ],
+  tasks: [
+    {
+      id: '1459c503-ebac-55d8-9445-5f06671b1c71',
+      name: 'llm',
+      path: [Array],
+      interrupts: [],
+      state: undefined
+    }
+  ],
+  metadata: { source: 'loop', writes: null, step: 0, parents: {} },
+  config: {
+    configurable: {
+      thread_id: '3',
+      checkpoint_ns: '',
+      checkpoint_id: '1efcd2f4-38bb-6100-8000-f6f01ed9904a'
+    }
+  },
+  createdAt: '2025-01-07T19:40:35.216Z',
+  parentConfig: {
+    configurable: {
+      thread_id: '3',
+      checkpoint_ns: '',
+      checkpoint_id: '1efcd2f4-38a0-6350-ffff-f96ec8124524'
+    }
+  }
+}
+--
+{
+  values: { messages: [] },
+  next: [ '__start__' ],
+  tasks: [
+    {
+      id: '578ad8b1-921e-57dd-92c9-f9282ce2044a',
+      name: '__start__',
+      path: [Array],
+      interrupts: [],
+      state: undefined
+    }
+  ],
+  metadata: {
+    source: 'input',
+    writes: { __start__: [Object] },
+    step: -1,
+    parents: {}
+  },
+  config: {
+    configurable: {
+      thread_id: '3',
+      checkpoint_ns: '',
+      checkpoint_id: '1efcd2f4-38a0-6350-ffff-f96ec8124524'
+    }
+  },
+  createdAt: '2025-01-07T19:40:35.205Z',
+  parentConfig: undefined
+}
+--
+{
+  values: {
+    messages: [
+      HumanMessage {
+        "id": "34d164a1-dc16-4f53-bdbc-1f4ec648d0b4",
+        "content": "What is the weather in LA?",
+        "additional_kwargs": {},
+        "response_metadata": {}
+      },
+      AIMessage {
+        "id": "chatcmpl-An9jHkROxxIsNEE0kKBC4cUycQlKE",
+        "content": "",
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_1jVzePltFMgdpbHzl9xDgf6o",
+              "type": "function",
+              "function": "[Object]"
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "promptTokens": 144,
+            "completionTokens": 22,
+            "totalTokens": 166
+          },
+          "finish_reason": "tool_calls",
+          "model_name": "gpt-4o-mini-2024-07-18",
+          "usage": {
+            "prompt_tokens": 144,
+            "completion_tokens": 22,
+            "total_tokens": 166,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_0aa8d3e20b"
+        },
+        "tool_calls": [
+          {
+            "name": "tavily_search_results_json",
+            "args": {
+              "input": "current weather Los Angeles"
+            },
+            "type": "tool_call",
+            "id": "call_1jVzePltFMgdpbHzl9xDgf6o"
+          }
+        ],
+        "invalid_tool_calls": []
+      }
+    ]
+  },
+  next: [ 'action' ],
+  tasks: [
+    {
+      id: 'de94cdc2-9194-5774-a013-fdbe8499df6e',
+      name: 'action',
+      path: [Array],
+      interrupts: [],
+      state: undefined
+    }
+  ],
+  metadata: { source: 'loop', writes: { llm: [Object] }, step: 1, parents: {} },
+  config: {
+    configurable: {
+      thread_id: '3',
+      checkpoint_ns: '',
+      checkpoint_id: '1efcd2f4-4331-6490-8001-b14d50ac0121'
+    }
+  },
+  createdAt: '2025-01-07T19:40:36.313Z',
+  parentConfig: {
+    configurable: {
+      thread_id: '3',
+      checkpoint_ns: '',
+      checkpoint_id: '1efcd2f4-38bb-6100-8000-f6f01ed9904a'
+    }
+  }
+}
+Calling: {"name":"tavily_search_results_json","args":{"input":"current weather Los Angeles"},"type":"tool_call","id":"call_1jVzePltFMgdpbHzl9xDgf6o"}
+[
+  ToolMessage {
+    "id": "2bc57bac-f9c6-49cc-a6ca-5021c6e65481",
+    "content": "[{\"title\":\"Weather in Los Angeles\",\"url\":\"https://www.weatherapi.com/\",\"content\":\"{'location': {'name': 'Los Angeles', 'region': 'California', 'country': 'United States of America', 'lat': 34.0522, 'lon': -118.2428, 'tz_id': 'America/Los_Angeles', 'localtime_epoch': 1736278772, 'localtime': '2025-01-07 11:39'}, 'current': {'last_updated_epoch': 1736278200, 'last_updated': '2025-01-07 11:30', 'temp_c': 18.3, 'temp_f': 64.9, 'is_day': 1, 'condition': {'text': 'Sunny', 'icon': '//cdn.weatherapi.com/weather/64x64/day/113.png', 'code': 1000}, 'wind_mph': 3.1, 'wind_kph': 5.0, 'wind_degree': 112, 'wind_dir': 'ESE', 'pressure_mb': 1015.0, 'pressure_in': 29.98, 'precip_mm': 0.0, 'precip_in': 0.0, 'humidity': 30, 'cloud': 0, 'feelslike_c': 18.3, 'feelslike_f': 64.9, 'windchill_c': 15.0, 'windchill_f': 59.0, 'heatindex_c': 15.0, 'heatindex_f': 58.9, 'dewpoint_c': -0.5, 'dewpoint_f': 31.1, 'vis_km': 16.0, 'vis_miles': 9.0, 'uv': 5.0, 'gust_mph': 3.6, 'gust_kph': 5.8}}\",\"score\":0.9714163,\"raw_content\":null},{\"title\":\"Weather in Los Angeles in January 2025\",\"url\":\"https://world-weather.info/forecast/usa/los_angeles/january-2025/\",\"content\":\"Weather in Los Angeles in January 2025 (California) - Detailed Weather Forecast for a Month Weather Weather in Los Angeles Weather in Los Angeles in January 2025 Los Angeles Weather Forecast for January 2025, is based on previous years' statistical data. +61°+50° +63°+52° +63°+52° +63°+52° +64°+55° +64°+54° +64°+55° +64°+55° +64°+55° +64°+54° +64°+54° +63°+52° +64°+54° +66°+54° +66°+54° +64°+55° +66°+55° +66°+55° +64°+54° +63°+54° +63°+54° +64°+54° +64°+54° +63°+52° +64°+54° +64°+54° +68°+55° +68°+54° +66°+54° +66°+54° +66°+55° Extended weather forecast in Los Angeles HourlyWeek10 days14 days30 daysYear Weather in large and nearby cities Weather in Washington, D.C.+64° Sacramento+66° Monterey Park+61° North Glendale+63° Norwalk+61° Pasadena+63° Rosemead+61° Santa Monica+61° Manhattan Beach+63° Inglewood+61° Bellflower+61° Beverly Hills+59° Burbank+63° Compton+61° Rancho Dominguez+61° world's temperature today day day Temperature units\",\"score\":0.42048118,\"raw_content\":null}]",
+    "name": "tavily_search_results_json",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "tool_call_id": "call_1jVzePltFMgdpbHzl9xDgf6o"
+  }
+]
+[
+  AIMessage {
+    "id": "chatcmpl-An9jRzX0P23EZ05HVy8qCPux7p95V",
+    "content": "The current weather in Los Angeles is sunny with a temperature of 18.3°C (64.9°F). The wind is blowing from the East-Southeast at 3.1 mph, and the humidity is at 30%. There is no precipitation expected at the moment. \n\nIf you need more details, you can check the full report [here](https://www.weatherapi.com/).",       
+    "additional_kwargs": {},
+    "response_metadata": {
+      "tokenUsage": {
+        "promptTokens": 999,
+        "completionTokens": 83,
+        "totalTokens": 1082
+      },
+      "finish_reason": "stop",
+      "model_name": "gpt-4o-mini-2024-07-18",
+      "usage": {
+        "prompt_tokens": 999,
+        "completion_tokens": 83,
+        "total_tokens": 1082,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "system_fingerprint": "fp_0aa8d3e20b"
+    },
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "output_tokens": 83,
+      "input_tokens": 999,
+      "total_tokens": 1082,
+      "input_token_details": {
+        "audio": 0,
+        "cache_read": 0
+      },
+      "output_token_details": {
+        "audio": 0,
+        "reasoning": 0
+      }
+    }
+  }
+]
+Calling: {"name":"tavily_search_results_json","args":{"input":"current weather in LA, accuweather"},"type":"tool_call","id":"call_1jVzePltFMgdpbHzl9xDgf6o"}
+{
+  messages: [
+    ToolMessage {
+      "id": "f7750061-53ac-4615-9b5f-46a9415c6587",
+      "content": "[{\"title\":\"Weather in Los Angeles\",\"url\":\"https://www.weatherapi.com/\",\"content\":\"{'location': {'name': 'Los Angeles', 'region': 'California', 'country': 'United States of America', 'lat': 34.0522, 'lon': -118.2428, 'tz_id': 'America/Los_Angeles', 'localtime_epoch': 1736278772, 'localtime': '2025-01-07 11:39'}, 'current': {'last_updated_epoch': 1736278200, 'last_updated': '2025-01-07 11:30', 'temp_c': 18.3, 'temp_f': 64.9, 'is_day': 1, 'condition': {'text': 'Sunny', 'icon': '//cdn.weatherapi.com/weather/64x64/day/113.png', 'code': 1000}, 'wind_mph': 3.1, 'wind_kph': 5.0, 'wind_degree': 112, 'wind_dir': 'ESE', 'pressure_mb': 1015.0, 'pressure_in': 29.98, 'precip_mm': 0.0, 'precip_in': 0.0, 'humidity': 30, 'cloud': 0, 'feelslike_c': 18.3, 'feelslike_f': 64.9, 'windchill_c': 15.0, 'windchill_f': 59.0, 'heatindex_c': 15.0, 'heatindex_f': 58.9, 'dewpoint_c': -0.5, 'dewpoint_f': 31.1, 'vis_km': 16.0, 'vis_miles': 9.0, 'uv': 5.0, 'gust_mph': 3.6, 'gust_kph': 5.8}}\",\"score\":0.4963901,\"raw_content\":null},{\"title\":\"Los Angeles, CA Current Weather | AccuWeather\",\"url\":\"https://www.accuweather.com/en/us/los-angeles/90012/current-weather/347625\",\"content\":\"Los Angeles, CA Current Weather | AccuWeather Winter Weather Storm to deliver snow, rain and wind to Midwest, Northeast 1 hour ago Weather Forecasts Bomb cyclone with atmospheric river to blast Northwest 1 hour ago Astronomy Moon to align with Jupiter, Mars on Monday night 8 hours ago Severe Weather Severe thunderstorms continue to rumble through southern Plains 1 hour ago Hurricane Tropical Rainstorm Sara, now in Gulf, to drench southern US coast 1 hour ago  More Stories AccuWeather Ready Business Health Hurricane Leisure and Recreation Severe Weather Space and Astronomy Sports Travel Weather News Winter Center AccuWeather Ready Business Health Hurricane Leisure and Recreation Severe Weather Space and Astronomy Sports Travel Weather News Winter Center\",\"score\":0.48879638,\"raw_content\":null}]",
+      "name": "tavily_search_results_json",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "tool_call_id": "call_1jVzePltFMgdpbHzl9xDgf6o"
+    }
+  ]
+}
+{
+  messages: [
+    AIMessage {
+      "id": "chatcmpl-An9jWGjCops2RMpnVHksxCCFv5Jjm",
+      "content": "The current weather in Los Angeles shows a temperature of approximately 64.9°F (18.3°C) with clear and sunny conditions. The wind is coming from the east-southeast at around 3.1 mph. Humidity is at 30%, and there is no precipitation expected.\n\nFor further details, you can check the full report on [AccuWeather](https://www.accuweather.com/en/us/los-angeles/90012/current-weather/347625).",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "tokenUsage": {
+          "promptTokens": 795,
+          "completionTokens": 100,
+          "totalTokens": 895
+        },
+        "finish_reason": "stop",
+        "model_name": "gpt-4o-mini-2024-07-18",
+        "usage": {
+          "prompt_tokens": 795,
+          "completion_tokens": 100,
+          "total_tokens": 895,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "system_fingerprint": "fp_0aa8d3e20b"
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "output_tokens": 100,
+        "input_tokens": 795,
+        "total_tokens": 895,
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 0
+        },
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 0
+        }
+      }
+    }
+  ]
+}
+{
+  values: {
+    messages: [
+      HumanMessage {
+        "id": "34d164a1-dc16-4f53-bdbc-1f4ec648d0b4",
+        "content": "What is the weather in LA?",
+        "additional_kwargs": {},
+        "response_metadata": {}
+      },
+      AIMessage {
+        "id": "chatcmpl-An9jHkROxxIsNEE0kKBC4cUycQlKE",
+        "content": "",
+        "additional_kwargs": {
+          "tool_calls": [
+            {
+              "id": "call_1jVzePltFMgdpbHzl9xDgf6o",
+              "type": "function",
+              "function": "[Object]"
+            }
+          ]
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "promptTokens": 144,
+            "completionTokens": 22,
+            "totalTokens": 166
+          },
+          "finish_reason": "tool_calls",
+          "model_name": "gpt-4o-mini-2024-07-18",
+          "usage": {
+            "prompt_tokens": 144,
+            "completion_tokens": 22,
+            "total_tokens": 166,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_0aa8d3e20b"
+        },
+        "tool_calls": [
+          {
+            "name": "tavily_search_results_json",
+            "args": {
+              "input": "current weather in LA, accuweather"
+            },
+            "type": "tool_call",
+            "id": "call_1jVzePltFMgdpbHzl9xDgf6o"
+          }
+        ],
+        "invalid_tool_calls": []
+      }
+    ]
+  },
+  next: [ 'action' ],
+  tasks: [
+    {
+      id: 'de94cdc2-9194-5774-a013-fdbe8499df6e',
+      name: 'action',
+      path: [Array],
+      interrupts: [],
+      state: undefined
+    }
+  ],
+  metadata: { source: 'loop', writes: { llm: [Object] }, step: 1, parents: {} },
+  config: {
+    configurable: {
+      thread_id: '3',
+      checkpoint_ns: '',
+      checkpoint_id: '1efcd2f4-4331-6490-8001-b14d50ac0121'
+    }
+  },
+  createdAt: '2025-01-07T19:40:36.313Z',
+  parentConfig: {
+    configurable: {
+      thread_id: '3',
+      checkpoint_ns: '',
+      checkpoint_id: '1efcd2f4-38bb-6100-8000-f6f01ed9904a'
+    }
+  }
+}
+{
+  messages: [
+    AIMessage {
+      "id": "chatcmpl-An9jZk9BVml7aefvqoIb5aJh50b5D",
+      "content": "The current weather in Los Angeles is 54 degrees Celsius. However, this seems unusually high, as typical temperatures in Los Angeles are generally much lower. Would you like me to verify the information?",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "tokenUsage": {
+          "promptTokens": 181,
+          "completionTokens": 41,
+          "totalTokens": 222
+        },
+        "finish_reason": "stop",
+        "model_name": "gpt-4o-mini-2024-07-18",
+        "usage": {
+          "prompt_tokens": 181,
+          "completion_tokens": 41,
+          "total_tokens": 222,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "system_fingerprint": "fp_0aa8d3e20b"
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "output_tokens": 41,
+        "input_tokens": 181,
+        "total_tokens": 222,
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 0
+        },
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 0
+        }
+      }
+    }
+  ]
+}

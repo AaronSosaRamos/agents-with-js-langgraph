@@ -1,0 +1,1624 @@
+node1, count: 0
+node2, count: 1
+node1, count: 2
+node2, count: 3
+The current state:
+{
+  "values": {
+    "lnode": "node_2",
+    "scratch": "hi",
+    "count": 4
+  },
+  "next": [],
+  "tasks": [],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node2": {
+        "lnode": "node_2",
+        "count": 1
+      }
+    },
+    "step": 4,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-2faf-60a0-8004-e3d3de909289"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:35.914Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-2fa5-6460-8003-69529d3fb94d"
+    }
+  }
+}
+
+The state history:
+{
+  "values": {
+    "lnode": "node_2",
+    "scratch": "hi",
+    "count": 4
+  },
+  "next": [],
+  "tasks": [],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node2": {
+        "lnode": "node_2",
+        "count": 1
+      }
+    },
+    "step": 4,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-2faf-60a0-8004-e3d3de909289"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:35.914Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-2fa5-6460-8003-69529d3fb94d"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_1",
+    "scratch": "hi",
+    "count": 3
+  },
+  "next": [
+    "Node2"
+  ],
+  "tasks": [
+    {
+      "id": "56998b99-f981-5b0d-84b1-1f887bc579f3",
+      "name": "Node2",
+      "path": [
+        "__pregel_pull",
+        "Node2"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node1": {
+        "lnode": "node_1",
+        "count": 1
+      }
+    },
+    "step": 3,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-2fa5-6460-8003-69529d3fb94d"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:35.910Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-2f9d-6f30-8002-d636e439a654"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_2",
+    "scratch": "hi",
+    "count": 2
+  },
+  "next": [
+    "Node1"
+  ],
+  "tasks": [
+    {
+      "id": "6f404b66-872e-5d54-8851-65a230858223",
+      "name": "Node1",
+      "path": [
+        "__pregel_pull",
+        "Node1"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node2": {
+        "lnode": "node_2",
+        "count": 1
+      }
+    },
+    "step": 2,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-2f9d-6f30-8002-d636e439a654"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:35.907Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-2f91-6be0-8001-d15a6c00dfc5"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_1",
+    "scratch": "hi",
+    "count": 1
+  },
+  "next": [
+    "Node2"
+  ],
+  "tasks": [
+    {
+      "id": "1b2e3a4d-fe26-5477-9178-3c1445a4c656",
+      "name": "Node2",
+      "path": [
+        "__pregel_pull",
+        "Node2"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node1": {
+        "lnode": "node_1",
+        "count": 1
+      }
+    },
+    "step": 1,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-2f91-6be0-8001-d15a6c00dfc5"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:35.902Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-2f7e-6360-8000-ac35f7b6e421"
+    }
+  }
+}
+{
+  "values": {
+    "scratch": "hi",
+    "count": 0
+  },
+  "next": [
+    "Node1"
+  ],
+  "tasks": [
+    {
+      "id": "b9ae04d4-4ac7-543c-8680-f444dd3262ba",
+      "name": "Node1",
+      "path": [
+        "__pregel_pull",
+        "Node1"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": null,
+    "step": 0,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-2f7e-6360-8000-ac35f7b6e421"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:35.894Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-2f5c-6080-ffff-f6e783d22a9e"
+    }
+  }
+}
+{
+  "values": {
+    "count": 0
+  },
+  "next": [
+    "__start__"
+  ],
+  "tasks": [
+    {
+      "id": "601dfc5d-cebe-555e-bbce-f293044b9d53",
+      "name": "__start__",
+      "path": [
+        "__pregel_pull",
+        "__start__"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "input",
+    "writes": {
+      "__start__": {
+        "count": 0,
+        "scratch": "hi"
+      }
+    },
+    "step": -1,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-2f5c-6080-ffff-f6e783d22a9e"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:35.880Z"
+}
+
+Storing state configs:
+{
+  "configurable": {
+    "thread_id": "1",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-2faf-60a0-8004-e3d3de909289"
+  }
+}
+4
+{
+  "configurable": {
+    "thread_id": "1",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-2fa5-6460-8003-69529d3fb94d"
+  }
+}
+3
+{
+  "configurable": {
+    "thread_id": "1",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-2f9d-6f30-8002-d636e439a654"
+  }
+}
+2
+{
+  "configurable": {
+    "thread_id": "1",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-2f91-6be0-8001-d15a6c00dfc5"
+  }
+}
+1
+{
+  "configurable": {
+    "thread_id": "1",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-2f7e-6360-8000-ac35f7b6e421"
+  }
+}
+0
+{
+  "configurable": {
+    "thread_id": "1",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-2f5c-6080-ffff-f6e783d22a9e"
+  }
+}
+0
+
+Get an earlier state config:
+{
+  "configurable": {
+    "thread_id": "1",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-2f91-6be0-8001-d15a6c00dfc5"
+  }
+}
+
+Get the full earlier state:
+{
+  "values": {
+    "lnode": "node_1",
+    "scratch": "hi",
+    "count": 1
+  },
+  "next": [
+    "Node2"
+  ],
+  "tasks": [
+    {
+      "id": "1b2e3a4d-fe26-5477-9178-3c1445a4c656",
+      "name": "Node2",
+      "path": [
+        "__pregel_pull",
+        "Node2"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node1": {
+        "lnode": "node_1",
+        "count": 1
+      }
+    },
+    "step": 1,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-2f91-6be0-8001-d15a6c00dfc5"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:35.902Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-2f7e-6360-8000-ac35f7b6e421"
+    }
+  }
+}
+
+Rerun the graph from the earlier state:
+{
+  "configurable": {
+    "thread_id": "1",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-2faf-60a0-8004-e3d3de909289"
+  }
+}
+4
+node2, count: 1
+{
+  "configurable": {
+    "thread_id": "1",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-2fa5-6460-8003-69529d3fb94d"
+  }
+}
+3
+node1, count: 2
+{
+  "configurable": {
+    "thread_id": "1",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-2f9d-6f30-8002-d636e439a654"
+  }
+}
+2
+node2, count: 3
+{
+  "configurable": {
+    "thread_id": "1",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-2f91-6be0-8001-d15a6c00dfc5"
+  }
+}
+1
+{
+  "configurable": {
+    "thread_id": "1",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-2f7e-6360-8000-ac35f7b6e421"
+  }
+}
+0
+{
+  "configurable": {
+    "thread_id": "1",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-2f5c-6080-ffff-f6e783d22a9e"
+  }
+}
+0
+Run it, then check the state:
+node1, count: 0
+node2, count: 1
+node1, count: 2
+node2, count: 3
+{
+  "values": {
+    "lnode": "node_2",
+    "scratch": "hi",
+    "count": 4
+  },
+  "next": [],
+  "tasks": [],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node2": {
+        "lnode": "node_2",
+        "count": 1
+      }
+    },
+    "step": 4,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-30fb-6120-8004-c070c7f999f0"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.050Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "1",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-30dd-6c60-8003-094e21e06c71"
+    }
+  }
+}
+
+Storing new state configs:
+{
+  "configurable": {
+    "thread_id": "2",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-313a-68c0-8004-0027e156a8d0"
+  }
+}
+4
+{
+  "configurable": {
+    "thread_id": "2",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-3130-6c80-8003-50fa14aeb3c7"
+  }
+}
+3
+{
+  "configurable": {
+    "thread_id": "2",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-312b-6e60-8002-a742ba48f0d2"
+  }
+}
+2
+{
+  "configurable": {
+    "thread_id": "2",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-3124-6930-8001-c7d4ae489959"
+  }
+}
+1
+{
+  "configurable": {
+    "thread_id": "2",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-311d-6400-8000-f7fbbd6c7661"
+  }
+}
+0
+{
+  "configurable": {
+    "thread_id": "2",
+    "checkpoint_ns": "",
+    "checkpoint_id": "1efcd323-3115-6ed1-ffff-02c5810f518c"
+  }
+}
+0
+
+Save previous state config:
+{
+  "values": {
+    "lnode": "node_1",
+    "scratch": "hi",
+    "count": 1
+  },
+  "next": [
+    "Node2"
+  ],
+  "tasks": [
+    {
+      "id": "52459a31-0b6f-5197-a45f-faaafe5d8f27",
+      "name": "Node2",
+      "path": [
+        "__pregel_pull",
+        "Node2"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node1": {
+        "lnode": "node_1",
+        "count": 1
+      }
+    },
+    "step": 1,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3124-6930-8001-c7d4ae489959"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.067Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-311d-6400-8000-f7fbbd6c7661"
+    }
+  }
+}
+
+Modify the previous state values:
+{
+  "values": {
+    "lnode": "node_1",
+    "scratch": "hello",
+    "count": -3
+  },
+  "next": [
+    "Node2"
+  ],
+  "tasks": [
+    {
+      "id": "52459a31-0b6f-5197-a45f-faaafe5d8f27",
+      "name": "Node2",
+      "path": [
+        "__pregel_pull",
+        "Node2"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node1": {
+        "lnode": "node_1",
+        "count": 1
+      }
+    },
+    "step": 1,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3124-6930-8001-c7d4ae489959"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.067Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-311d-6400-8000-f7fbbd6c7661"
+    }
+  }
+}
+
+The updated state history:
+{
+  "values": {
+    "lnode": "node_2",
+    "scratch": "hi",
+    "count": 2
+  },
+  "next": [
+    "Node1"
+  ],
+  "tasks": [
+    {
+      "id": "f9c4728c-6e85-55cb-ad3e-690be29aac53",
+      "name": "Node1",
+      "path": [
+        "__pregel_pull",
+        "Node1"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node2": {
+        "lnode": "node_2",
+        "count": 1
+      }
+    },
+    "step": 2,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-312b-6e60-8002-a742ba48f0d2"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.070Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3124-6930-8001-c7d4ae489959"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_1",
+    "scratch": "hi",
+    "count": 1
+  },
+  "next": [
+    "Node2"
+  ],
+  "tasks": [
+    {
+      "id": "52459a31-0b6f-5197-a45f-faaafe5d8f27",
+      "name": "Node2",
+      "path": [
+        "__pregel_pull",
+        "Node2"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node1": {
+        "lnode": "node_1",
+        "count": 1
+      }
+    },
+    "step": 1,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3124-6930-8001-c7d4ae489959"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.067Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-311d-6400-8000-f7fbbd6c7661"
+    }
+  }
+}
+{
+  "values": {
+    "scratch": "hi",
+    "count": 0
+  },
+  "next": [
+    "Node1"
+  ],
+  "tasks": [
+    {
+      "id": "68e9332b-00e1-5323-80b0-9811b8513e13",
+      "name": "Node1",
+      "path": [
+        "__pregel_pull",
+        "Node1"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": null,
+    "step": 0,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-311d-6400-8000-f7fbbd6c7661"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.064Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3115-6ed1-ffff-02c5810f518c"
+    }
+  }
+}
+{
+  "values": {
+    "count": 0
+  },
+  "next": [
+    "__start__"
+  ],
+  "tasks": [
+    {
+      "id": "c2609acd-e1f7-5376-b784-2c952384c9e6",
+      "name": "__start__",
+      "path": [
+        "__pregel_pull",
+        "__start__"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "input",
+    "writes": {
+      "__start__": {
+        "count": 0,
+        "scratch": "hi"
+      }
+    },
+    "step": -1,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3115-6ed1-ffff-02c5810f518c"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.061Z"
+}
+
+The updated state history and set the node:
+{
+  "values": {
+    "lnode": "node_1",
+    "scratch": "hi",
+    "count": 3
+  },
+  "next": [
+    "Node2"
+  ],
+  "tasks": [
+    {
+      "id": "b9bfc764-63ee-5a32-8c53-9f6907a564c7",
+      "name": "Node2",
+      "path": [
+        "__pregel_pull",
+        "Node2"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node1": {
+        "lnode": "node_1",
+        "count": 1
+      }
+    },
+    "step": 3,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3130-6c80-8003-50fa14aeb3c7"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.072Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-312b-6e60-8002-a742ba48f0d2"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_2",
+    "scratch": "hi",
+    "count": 2
+  },
+  "next": [
+    "Node1"
+  ],
+  "tasks": [
+    {
+      "id": "f9c4728c-6e85-55cb-ad3e-690be29aac53",
+      "name": "Node1",
+      "path": [
+        "__pregel_pull",
+        "Node1"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node2": {
+        "lnode": "node_2",
+        "count": 1
+      }
+    },
+    "step": 2,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-312b-6e60-8002-a742ba48f0d2"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.070Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3124-6930-8001-c7d4ae489959"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_1",
+    "scratch": "hi",
+    "count": 1
+  },
+  "next": [
+    "Node2"
+  ],
+  "tasks": [
+    {
+      "id": "52459a31-0b6f-5197-a45f-faaafe5d8f27",
+      "name": "Node2",
+      "path": [
+        "__pregel_pull",
+        "Node2"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node1": {
+        "lnode": "node_1",
+        "count": 1
+      }
+    },
+    "step": 1,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3124-6930-8001-c7d4ae489959"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.067Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-311d-6400-8000-f7fbbd6c7661"
+    }
+  }
+}
+{
+  "values": {
+    "scratch": "hi",
+    "count": 0
+  },
+  "next": [
+    "Node1"
+  ],
+  "tasks": [
+    {
+      "id": "68e9332b-00e1-5323-80b0-9811b8513e13",
+      "name": "Node1",
+      "path": [
+        "__pregel_pull",
+        "Node1"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": null,
+    "step": 0,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-311d-6400-8000-f7fbbd6c7661"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.064Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3115-6ed1-ffff-02c5810f518c"
+    }
+  }
+}
+{
+  "values": {
+    "count": 0
+  },
+  "next": [
+    "__start__"
+  ],
+  "tasks": [
+    {
+      "id": "c2609acd-e1f7-5376-b784-2c952384c9e6",
+      "name": "__start__",
+      "path": [
+        "__pregel_pull",
+        "__start__"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "input",
+    "writes": {
+      "__start__": {
+        "count": 0,
+        "scratch": "hi"
+      }
+    },
+    "step": -1,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3115-6ed1-ffff-02c5810f518c"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.061Z"
+}
+
+Finally invoke the graph with this new state:
+node2, count: -2
+node1, count: -1
+node2, count: 0
+node1, count: 1
+node2, count: 2
+{
+  "values": {
+    "lnode": "node_2",
+    "scratch": "hello",
+    "count": 3
+  },
+  "next": [],
+  "tasks": [],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node2": {
+        "lnode": "node_2",
+        "count": 1
+      }
+    },
+    "step": 11,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3216-6460-800b-94b97428d30c"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.166Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-320c-6820-800a-246f65eee7a1"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_1",
+    "scratch": "hello",
+    "count": 2
+  },
+  "next": [
+    "Node2"
+  ],
+  "tasks": [
+    {
+      "id": "3f38630a-f480-5be6-95ed-326bee2551a4",
+      "name": "Node2",
+      "path": [
+        "__pregel_pull",
+        "Node2"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node1": {
+        "lnode": "node_1",
+        "count": 1
+      }
+    },
+    "step": 10,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-320c-6820-800a-246f65eee7a1"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.162Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3207-6a00-8009-da13b921e0a6"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_2",
+    "scratch": "hello",
+    "count": 1
+  },
+  "next": [
+    "Node1"
+  ],
+  "tasks": [
+    {
+      "id": "81a9dc8d-6c10-5b5b-9c44-33b1e7716c78",
+      "name": "Node1",
+      "path": [
+        "__pregel_pull",
+        "Node1"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node2": {
+        "lnode": "node_2",
+        "count": 1
+      }
+    },
+    "step": 9,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3207-6a00-8009-da13b921e0a6"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.160Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3200-64d0-8008-cb95e55c9325"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_1",
+    "scratch": "hello",
+    "count": 0
+  },
+  "next": [
+    "Node2"
+  ],
+  "tasks": [
+    {
+      "id": "1c3dceb6-e9a2-5511-aed4-e427aa06f98f",
+      "name": "Node2",
+      "path": [
+        "__pregel_pull",
+        "Node2"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node1": {
+        "lnode": "node_1",
+        "count": 1
+      }
+    },
+    "step": 8,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3200-64d0-8008-cb95e55c9325"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.157Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-31f8-6fa0-8007-bb245a211e6b"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_2",
+    "scratch": "hello",
+    "count": -1
+  },
+  "next": [
+    "Node1"
+  ],
+  "tasks": [
+    {
+      "id": "dc1967fc-e3b8-5578-beed-531a4b2a41c6",
+      "name": "Node1",
+      "path": [
+        "__pregel_pull",
+        "Node1"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node2": {
+        "lnode": "node_2",
+        "count": 1
+      }
+    },
+    "step": 7,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-31f8-6fa0-8007-bb245a211e6b"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.154Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-31b7-60f0-8006-06d59108379c"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_1",
+    "scratch": "hello",
+    "count": -2
+  },
+  "next": [
+    "Node2"
+  ],
+  "tasks": [
+    {
+      "id": "355d9c92-b86c-5446-8432-b16eb7dabb09",
+      "name": "Node2",
+      "path": [
+        "__pregel_pull",
+        "Node2"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "update",
+    "step": 6,
+    "writes": {
+      "Node1": {
+        "lnode": "node_1",
+        "scratch": "hello",
+        "count": -3
+      }
+    },
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-31b7-60f0-8006-06d59108379c"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.127Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3186-63b0-8005-d2a0b8b0c1ef"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_1",
+    "scratch": "hello",
+    "count": 1
+  },
+  "next": [
+    "Node1"
+  ],
+  "tasks": [
+    {
+      "id": "473cb6b8-e686-5ad0-8d49-e302497c6f27",
+      "name": "Node1",
+      "path": [
+        "__pregel_pull",
+        "Node1"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "update",
+    "step": 5,
+    "writes": {
+      "Node2": {
+        "lnode": "node_1",
+        "scratch": "hello",
+        "count": -3
+      }
+    },
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3186-63b0-8005-d2a0b8b0c1ef"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.107Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-313a-68c0-8004-0027e156a8d0"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_2",
+    "scratch": "hi",
+    "count": 4
+  },
+  "next": [],
+  "tasks": [],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node2": {
+        "lnode": "node_2",
+        "count": 1
+      }
+    },
+    "step": 4,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-313a-68c0-8004-0027e156a8d0"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.076Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3130-6c80-8003-50fa14aeb3c7"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_1",
+    "scratch": "hi",
+    "count": 3
+  },
+  "next": [
+    "Node2"
+  ],
+  "tasks": [
+    {
+      "id": "b9bfc764-63ee-5a32-8c53-9f6907a564c7",
+      "name": "Node2",
+      "path": [
+        "__pregel_pull",
+        "Node2"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node1": {
+        "lnode": "node_1",
+        "count": 1
+      }
+    },
+    "step": 3,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3130-6c80-8003-50fa14aeb3c7"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.072Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-312b-6e60-8002-a742ba48f0d2"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_2",
+    "scratch": "hi",
+    "count": 2
+  },
+  "next": [
+    "Node1"
+  ],
+  "tasks": [
+    {
+      "id": "f9c4728c-6e85-55cb-ad3e-690be29aac53",
+      "name": "Node1",
+      "path": [
+        "__pregel_pull",
+        "Node1"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node2": {
+        "lnode": "node_2",
+        "count": 1
+      }
+    },
+    "step": 2,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-312b-6e60-8002-a742ba48f0d2"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.070Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3124-6930-8001-c7d4ae489959"
+    }
+  }
+}
+{
+  "values": {
+    "lnode": "node_1",
+    "scratch": "hi",
+    "count": 1
+  },
+  "next": [
+    "Node2"
+  ],
+  "tasks": [
+    {
+      "id": "52459a31-0b6f-5197-a45f-faaafe5d8f27",
+      "name": "Node2",
+      "path": [
+        "__pregel_pull",
+        "Node2"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": {
+      "Node1": {
+        "lnode": "node_1",
+        "count": 1
+      }
+    },
+    "step": 1,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3124-6930-8001-c7d4ae489959"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.067Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-311d-6400-8000-f7fbbd6c7661"
+    }
+  }
+}
+{
+  "values": {
+    "scratch": "hi",
+    "count": 0
+  },
+  "next": [
+    "Node1"
+  ],
+  "tasks": [
+    {
+      "id": "68e9332b-00e1-5323-80b0-9811b8513e13",
+      "name": "Node1",
+      "path": [
+        "__pregel_pull",
+        "Node1"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "loop",
+    "writes": null,
+    "step": 0,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-311d-6400-8000-f7fbbd6c7661"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.064Z",
+  "parentConfig": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3115-6ed1-ffff-02c5810f518c"
+    }
+  }
+}
+{
+  "values": {
+    "count": 0
+  },
+  "next": [
+    "__start__"
+  ],
+  "tasks": [
+    {
+      "id": "c2609acd-e1f7-5376-b784-2c952384c9e6",
+      "name": "__start__",
+      "path": [
+        "__pregel_pull",
+        "__start__"
+      ],
+      "interrupts": []
+    }
+  ],
+  "metadata": {
+    "source": "input",
+    "writes": {
+      "__start__": {
+        "count": 0,
+        "scratch": "hi"
+      }
+    },
+    "step": -1,
+    "parents": {}
+  },
+  "config": {
+    "configurable": {
+      "thread_id": "2",
+      "checkpoint_ns": "",
+      "checkpoint_id": "1efcd323-3115-6ed1-ffff-02c5810f518c"
+    }
+  },
+  "createdAt": "2025-01-07T20:01:36.061Z"
+}
